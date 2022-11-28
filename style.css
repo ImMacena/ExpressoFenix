@@ -1,0 +1,96 @@
+/* Font Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Font Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --azul-primario: #1c4984;
+  --amarelo-primario: #fbc817;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+nav {
+  min-height: 12vh;
+}
+
+.navbar {
+  background-color: var(--azul-primario);
+  border-bottom: 3px solid var(--amarelo-primario);
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.bg-azul {
+  background-color: var(--azul-primario);
+}
+
+.btn-bl {
+  border: 2px solid var(--amarelo-primario);
+  color: var(--amarelo-primario) !important;
+  transition: 0.3s;
+}
+
+.btn-bl:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.hero {
+  position: relative;
+  height: 88vh;
+  background: linear-gradient(var(--azul-primario), rgba(28, 73, 132, 0.85), rgba(28, 73, 132, 0.4)), url(issets/onibus.png);
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+.title-hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-l {
+  color: var(--amarelo-primario);
+  font-weight: bold;
+  margin: 0;
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.title-b {
+  color: #fff;
+  letter-spacing: 10px;
+  border-bottom: 2px solid #fff;
+  width: fit-content;
+}
+
+.recarga {
+  height: 100vh;
+}
+
+footer {
+  border-top: 3px solid var(--amarelo-primario);
+}
+
+footer a {
+  text-decoration: none;
+  color: currentColor;
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: var(--amarelo-primario);
+}
+
+footer i {
+  color: #000;
+  background-color: var(--amarelo-primario);
+  border-radius: 100%;
+  padding: 4px;
+  margin-right: 5px;
+}
