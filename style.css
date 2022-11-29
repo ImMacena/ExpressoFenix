@@ -70,7 +70,25 @@ nav {
 }
 
 .recarga {
-  height: 100vh;
+  position: relative;
+}
+
+.img-passe {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-novidade {
+  border: 2px solid var(--amarelo-primario);
+  color: var(--amarelo-primario);
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  letter-spacing: 3px;
+}
+
+.recarga-title {
+  letter-spacing: 3px;
 }
 
 footer {
