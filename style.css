@@ -63,6 +63,7 @@ nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  max-width: 320px;
 }
 
 .title-l {
@@ -80,9 +81,16 @@ nav {
   width: fit-content;
 }
 
+.title-hero p {
+  width: fit-content;
+}
+
 .recarga {
-  position: relative;
   border-bottom: 3px solid var(--amarelo-primario);
+  background: linear-gradient(rgba(28, 73, 132, 0.90), rgba(28, 73, 132, 9)), url(issets/textura.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .btn-novidade {
@@ -180,7 +188,7 @@ nav {
 }
 
 .card-cidade a:hover {
-  color: currentColor;
+  color: #333;
 }
 
 .empresa {
