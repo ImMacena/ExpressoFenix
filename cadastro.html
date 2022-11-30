@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .imagem {
+        background-image: url("issets/onibus.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+    <title>Fênix | Itanhaém - Cadastro</title>
+  </head>
+
+  <body class="bg-azul">
+    <header>
+      <!-- Navbar Início -->
+      <nav
+        class="navbar navbar-expand-lg py-lg-0 mx-4 navbar-dark"
+        style="z-index: 9999"
+      >
+        <div class="container">
+          <ul class="navbar-nav col col-lg-7 align-items-start">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><img
+                  src="issets/FenixLogo.png"
+                  alt="Logo do expresso fênix"
+                  style="width: 150px"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-lg-5 justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul
+              class="navbar-nav fs-6 gap-2"
+              style="font-family: 'Roboto', sans-serif !important"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Recarga
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Recarregar passe</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Fazer um passe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Linhas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#empresa">Empresa</a>
+              </li>
+              <li class="nav-item border-end border-white pe-2">
+                <a class="nav-link" href="#"
+                  >Fale<span style="color: rgba(0, 0, 0, 0)">.</span>Conosco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><img
+                    src="issets/brasil.png"
+                    alt="Bandeira do Brasil"
+                    style="width: 25px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Fim -->
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="container-fluid">
+          <div class="text-center fs-3 pt-5 text-white">
+            <h1>CADASTRO</h1>
+            <p class="cor-l">
+              Efetue seu cadastro e tenha acesso completo aos nossos serviços!
+            </p>
+          </div>
+
+          <div class="row pb-5">
+            <div class="col-10 offset-1 bg-white rounded-4">
+              <h3
+                class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
+              >
+                Suas informações pessoais
+              </h3>
+
+              <div class="row">
+                <div class="col-10 offset-1">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Nome</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Digite seu Nome Completo"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <div class="col-5 offset-1">
+                  <label for="exampleFormControlTextarea2" class="form-label"
+                    >RG frente</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="inputGroupFile01"
+                  />
+                </div>
+
+                <div class="col-5">
+                  <label for="exampleFormControlTextarea3" class="form-label"
+                    >RG frente</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="inputGroupFile01"
+                  />
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-10 offset-1">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Digite seu Email"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <div class="col-10 offset-1">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Senha</label
+                  >
+                  <input
+                    class="form-control"
+                    type="password"
+                    placeholder="Digite uma senha"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <div class="col-10 offset-1">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Confirme Senha</label
+                  >
+                  <input
+                    class="form-control"
+                    type="password"
+                    placeholder="Confirme senha"
+                  />
+                </div>
+              </div>
+
+              <div class="row my-4">
+                <h3
+                  class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
+                >
+                  Suas informações de endereço
+                </h3>
+
+                <div class="col-10 col-lg-5 offset-1 mb-4">
+                  <label for="exampleFormControlTextarea6" class="form-label"
+                    >Logradouro</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Digite o nome da rua"
+                  />
+                </div>
+
+                <div class="col-10 col-lg-3 offset-1 mb-lg-4">
+                  <label for="exampleFormControlTextarea7" class="form-label"
+                    >N°</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Numeração da residencia"
+                  />
+                </div>
+
+                <div class="col-10 col-lg-5 offset-1 my-4">
+                  <label for="exampleFormControlTextarea7" class="form-label"
+                    >Bairro</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Digite seu Bairro"
+                  />
+                </div>
+
+                <div class="col-10 col-lg-3 offset-1 my-lg-4">
+                  <label for="exampleFormControlTextarea7" class="form-label"
+                    >CEP</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="CEP do local"
+                  />
+                </div>
+              </div>
+
+              <div class="row text-center my-5">
+                <div class="col-6 mx-auto">
+                  <button type="button" class="btn btn-success w-100 fs-5">
+                    Cadastrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Início -->
+    <footer class="text-white py-3" style="font-size: 12px">
+      <div class="container mt-4">
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <a href="#">achados e perdidos</a>
+            <a href="#">nossos motoristas</a>
+            <a href="#">trabalhe conosco</a>
+            <a href="#">sac</a>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <p class="m-0">
+              <i class="bi bi-telephone"></i> TELEFONE: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-whatsapp"></i> WHASTAPP: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-envelope"></i> EMAIL: fenix@contato.com.br
+            </p>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column text-center mb-5 mb-lg-0"
+          >
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Rua da Caixa de Água, 666,
+              Jardim Legal, Itanhaém - SP CEP 11740-000
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col">
+            <p class="m-0">
+              <span style="color: var(--amarelo-primario)"
+                >EXPRESSO FÊNIX VIAÇÃO LTDA</span
+              >
+              - CNPJ: 05.849.495/0001-41
+            </p>
+            <p>
+              Desenvolvido por:
+              <span style="color: var(--amarelo-primario)">1DSI3 LTDA</span>
+              &copy; Todos os direitos reservados 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Fim -->
+    <!-- Arquivo JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

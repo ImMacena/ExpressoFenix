@@ -46,7 +46,7 @@ nav {
 
 .hero {
   position: relative;
-  height: 88vh;
+  min-height: 88vh;
   background: linear-gradient(
       var(--azul-primario),
       rgba(28, 73, 132, 0.85),
@@ -87,7 +87,8 @@ nav {
 
 .recarga {
   border-bottom: 3px solid var(--amarelo-primario);
-  background: linear-gradient(rgba(28, 73, 132, 0.90), rgba(28, 73, 132, 9)), url(issets/textura.png);
+  background: linear-gradient(rgba(28, 73, 132, 0.88), rgba(28, 73, 132, 0.88)),
+    url(issets/textura.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,11 +123,11 @@ nav {
 
 .horario {
   background: linear-gradient(
-    var(--azul-primario),
-    rgba(28, 73, 132, 0.75),
-    rgba(28, 73, 132, 075)
-  ),
-  url(issets/itanhaem.jpg);
+      var(--azul-primario),
+      rgba(28, 73, 132, 0.75),
+      rgba(28, 73, 132, 075)
+    ),
+    url(issets/itanhaem.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,7 +169,51 @@ nav {
   position: relative;
   width: 300px;
   height: 320px;
-  border: 1px solid #000;
+  background-color: #000;
+  margin-bottom: 1rem;
+}
+
+.campinas {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/campinas.jpg);
+}
+
+.amparo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/amparo.jpeg);
+}
+
+.sao-paulo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/saopaulo.jpg);
+}
+
+.serra-negra {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/serranegra.jpg);
+}
+
+.itatiba {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/itatiba.jpg);
+}
+
+.pedreira {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(issets/pedreira.jpg);
+}
+
+.campinas,
+.amparo,
+.sao-paulo,
+.serra-negra,
+.itatiba,
+.pedreira {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-cidade h4 {
@@ -179,10 +224,10 @@ nav {
 
 .card-cidade a {
   position: absolute;
-  bottom: 1rem;
+  bottom: -0.75rem;
   text-decoration: none;
   background-color: var(--amarelo-primario);
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 1.75rem;
   color: #000;
   border-radius: 3px;
 }
@@ -193,11 +238,11 @@ nav {
 
 .empresa {
   background: linear-gradient(
-    var(--azul-primario),
-    rgba(28, 73, 132, 0.75),
-    rgba(28, 73, 132, 075)
-  ),
-  url(issets/fenix.png);
+      var(--azul-primario),
+      rgba(28, 73, 132, 0.75),
+      rgba(28, 73, 132, 075)
+    ),
+    url(issets/fenix.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
