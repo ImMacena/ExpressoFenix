@@ -8,8 +8,33 @@
   --amarelo-primario: #fbc817;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #153661;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}
+
 .cor-l {
   color: var(--amarelo-primario);
+}
+
+.border-l {
+  border: 2px solid var(--amarelo-primario);
+}
+
+.border-bl {
+  border-bottom: 4px solid var(--amarelo-primario);
+}
+
+.border-bc {
+  border-bottom: 4px solid #c0c0c0;
 }
 
 html {
@@ -279,6 +304,67 @@ nav {
 }
 
 .btn-sobre a:hover {
+  color: currentColor;
+}
+
+.form-control {
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--amarelo-primario) !important;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid var(--azul-primario) !important;
+}
+
+.form-control::placeholder {
+  color: #d0d0d0 !important;
+}
+
+.pay-btns a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #00c908;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 20px;
+}
+
+.pay-btns a:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
+.pay-method {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.pay-method input {
+  position: absolute;
+  bottom: -2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.clue {
+  font-size: 14px;
+  color: #888;
+  text-align: justify;
+}
+
+.next-btn {
+  text-decoration: none;
+  background-color: var(--amarelo-primario);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: #000;
+  font-weight: bold;
+}
+
+.next-btn:hover {
   color: currentColor;
 }
 

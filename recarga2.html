@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Fênix | Itanhaém</title>
+  </head>
+  <body class="bg-azul">
+    <header>
+      <!-- Navbar Início -->
+      <nav
+        class="navbar navbar-expand-lg py-lg-0 mx-4 navbar-dark"
+        style="z-index: 9999"
+      >
+        <div class="container">
+          <ul class="navbar-nav col col-lg-7 align-items-start">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><img
+                  src="issets/FenixLogo.png"
+                  alt="Logo do expresso fênix"
+                  style="width: 150px"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-lg-5 justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul
+              class="navbar-nav fs-6 gap-2"
+              style="font-family: 'Roboto', sans-serif !important"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Recarga
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="recarga1.html">Recarregar passe</a>
+                  </li>
+                  <li><a class="dropdown-item" href="cadastro.html">Fazer um passe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Linhas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#empresa">Empresa</a>
+              </li>
+              <li class="nav-item border-end border-white pe-2">
+                <a class="nav-link" href="#"
+                  >Fale<span style="color: rgba(0, 0, 0, 0)">.</span>Conosco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><img
+                    src="issets/brasil.png"
+                    alt="Bandeira do Brasil"
+                    style="width: 25px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Fim -->
+    </header>
+    <main class="pb-5" style="background-color: #f0f0f0; min-height: 100vh">
+      <div class="container">
+        <h1 class="text-center py-5 pb-2">RECARREGUE SEU PASSE</h1>
+        <div class="display bg-white shadow px-3 px-lg-4 pb-5">
+          <a href="recarga1.html"
+            ><i class="bi bi-arrow-left fs-2 text-dark"></i
+          ></a>
+          <div class="row text-center gap-2 px-3 px-lg-5">
+            <div class="col pay-prog border-bl">
+              <p class="m-1">Valor</p>
+            </div>
+            <div class="col pay-prog border-bl">
+              <p class="m-1">Pagamento</p>
+            </div>
+            <div class="col pay-prog border-bc">
+              <p class="m-1">Finalização</p>
+            </div>
+          </div>
+          <!-- Step2 -->
+          <div class="row px-3 px-lg-5 mt-5 mx-auto">
+            <p
+              class="fs-5 fw-bold border-bottom border-dark border-2 pb-3 mb-5"
+            >
+              Método de pagamento:
+            </p>
+            <div class="row">
+              <div class="d-flex justify-content-evenly flex-wrap gap-2">
+                <div
+                  class="col-12 col-lg-3 border-l pay-method d-flex align-items-center justify-content-center"
+                >
+                  <img src="issets/creditcard.png" alt="Cartoẽs de crédito" />
+                  <input type="radio" name="pay-methos" id="credit" checked />
+                </div>
+                <div
+                  class="col-12 col-lg-3 border-l pay-method d-flex align-items-center justify-content-center"
+                >
+                  <img src="issets/boleto.png" alt="Código barras de boleto" />
+                  <input type="radio" name="pay-methos" id="boleto" disabled />
+                </div>
+                <div
+                  class="col-12 col-lg-3 border-l pay-method d-flex align-items-center justify-content-center"
+                >
+                  <img src="issets/pix.png" alt="Imagem da logo do pix" />
+                  <input type="radio" name="pay-methos" id="pix" disabled />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 d-flex gap-5 flex-wrap">
+                <input
+                  type="text"
+                  placeholder="Nome Completo"
+                  class="col-12 col-lg"
+                />
+                <input
+                  type="text"
+                  placeholder="Número do Cartão"
+                  class="col-12 col-lg"
+                />
+              </div>
+            </div>
+            <div class="row d-flex gap-5 align-items-center mt-3">
+              <div class="col-12 col-lg d-flex gap-3 mt-3 flex-wrap">
+                <input
+                  type="text"
+                  placeholder="Validade"
+                  class="col-6 col-lg"
+                />
+                <input type="text" placeholder="CVV" class="col-6 col-lg" />
+              </div>
+              <p class="col clue">
+                CVV é o código de segurança do seu cartão. Ele se localiza em
+                três números na parte de trás. Não compartilhe este número com
+                ninguém, nenhum funcionário do Expresso Fênix deve te pedi-lo.
+              </p>
+            </div>
+            <div class="row mt-4 pt-4 border-top border-gray border-3">
+              <div
+                class="col d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <h3 class="col-12 col-lg-6">
+                  Valor:
+                  <span class="fw-bold" style="color: var(--azul-primario)"
+                    >R$ 50,00</span
+                  >
+                </h3>
+                <div
+                  class="col-12 col-lg-6 d-lg-flex justify-content-end mt-4 mt-lg-0"
+                >
+                  <a href="#" class="next-btn"
+                    ><i class="bi bi-lock-fill fs-5 pe-2"></i> CONTINUAR</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Início -->
+    <footer class="text-white py-3" style="font-size: 12px">
+      <div class="container mt-4">
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <a href="#">achados e perdidos</a>
+            <a href="#">nossos motoristas</a>
+            <a href="#">trabalhe conosco</a>
+            <a href="#">sac</a>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <p class="m-0">
+              <i class="bi bi-telephone"></i> TELEFONE: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-whatsapp"></i> WHASTAPP: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-envelope"></i> EMAIL: fenix@contato.com.br
+            </p>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column text-center mb-5 mb-lg-0"
+          >
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Rua da Caixa de Água, 666,
+              Jardim Legal, Itanhaém - SP CEP 11740-000
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col">
+            <p class="m-0">
+              <span style="color: var(--amarelo-primario)"
+                >EXPRESSO FÊNIX VIAÇÃO LTDA</span
+              >
+              - CNPJ: 05.849.495/0001-41
+            </p>
+            <p>
+              Desenvolvido por:
+              <span style="color: var(--amarelo-primario)">1DSI3 LTDA</span>
+              &copy; Todos os direitos reservados 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Fim -->
+    <!-- Arquivo JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
