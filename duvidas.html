@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicons/icon_fenix_32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="favicons/icon_fenix_57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="favicons/icon_fenix_72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="favicons/icon_fenix_114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="favicons/icon_fenix_144.png"
+    />
+
+    <title>Fênix | Itanhaém - SAC</title>
+  </head>
+  <body class="bg-azul">
+    <header>
+      <!-- Navbar Início -->
+      <nav
+        class="navbar navbar-expand-lg py-lg-0 mx-4 navbar-dark"
+        style="z-index: 9999"
+      >
+        <div class="container">
+          <ul class="navbar-nav col col-lg-7 align-items-start">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><img
+                  src="issets/FenixLogo.png"
+                  alt="Logo do expresso fênix"
+                  style="width: 150px"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-lg-5 justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul
+              class="navbar-nav fs-6 gap-2"
+              style="font-family: 'Roboto', sans-serif !important"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Recarga
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="recarga1.html"
+                      >Recarregar passe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cadastro.html"
+                      >Fazer um passe</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/"
+                  >Linhas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#empresa">Empresa</a>
+              </li>
+              <li class="nav-item border-end border-white pe-2">
+                <a class="nav-link" href="duvidas.html"
+                  >Fale<span style="color: rgba(0, 0, 0, 0)">.</span>Conosco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><img
+                    src="issets/brasil.png"
+                    alt="Bandeira do Brasil"
+                    style="width: 25px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Fim -->
+    </header>
+    <main class="pb-5 duvidas bg-sac">
+      <!--Dúvidas frequentes -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="text-center fs-3 pt-5 text-white">
+            <h1>DÚVIDAS FREQUENTES</h1>
+            <h5 class="cor-l">
+              Tire suas dúvidas, caso não encontre respostas, entre em contato
+              através dos campos abaixo
+            </h5>
+          </div>
+          <div class="col-12 col-lg-10 offset-lg-1 pt-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Quais documentos preciso para fazer um passe?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p><strong>Documentos necessários:</strong></p>
+                    <ul>
+                      <li>
+                        <p>
+                          Será necessário uma foto frente e verso do seu RG ou
+                          CNH, ou em caso de ser estrangério RNM ou RNE.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Uma foto do comprovante de endereço.</p>
+                      </li>
+                      <li>
+                        <p>Uma foto 3x4.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Quem tem direito ao Passe Livre?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <p>Idosos acima de 60 anos.</p>
+                      </li>
+                      <li>
+                        <p>Deficientes: com deficiência comprovada (laudo).</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Como Funciona o Passe escolar?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Alunos tem direito a pagar meia passagem, durante os dias
+                    úteis,
+                    <strong
+                      >lembrando que o passe funciona 2 vezes ao dia (ida e
+                      volta).</strong
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Como recarregar o passe?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      O passageiro deve ir até um ponto de atendimento da Fenix
+                      e recarregar usando moeda corrente, cartões de crédito ou
+                      débito, Pix ou QR Code.
+                    </p>
+                    <p>
+                      <strong>Endereço: </strong> Av. João Batista Leal, 659 -
+                      Boca da Barra, Itanhaém - SP, 11740-000.
+                    </p>
+                    <p>
+                      <strong>Horário de atendimento:</strong> Segunda à Sexta
+                      dás 09h ás 17h.
+                    </p>
+                    <p class="cor-l">
+                      Agora você também pode recarregar pelo site, no conforto
+                      de sua casa. Basta efetuar o cadastro ou login na página
+                      para ter acesso às recargas onlines, com a forma de
+                      pagamento de sua preferência.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim das dúvidas frequentes-->
+      <!--inicio do Chat-->
+      <div class="container-fluid mt-4">
+        <div class="row mt-5 pt-5 text-center text-white">
+          <h2>NÃO ENCONTROU SUA RESPOSTA?</h2>
+          <h6 class="cor-l">Entre em contato através dos campos abaixo</h6>
+        </div>
+        <div class="row">
+          <div class="col-10 offset-1 col-lg-8 offset-lg-2 pt-1 text-white">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Nome</label
+              >
+              <input
+                type="nome"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Escreva seu nome"
+              />
+              <div class="mb-3 mt-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3 text-white">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Conte-nos sobre seu problema</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                  placeholder="Descreva aqui o seu problema ou a sua dúvida e responderemos em breve"
+                ></textarea>
+              </div>
+              <div class="mb-5 text-center">
+                <button
+                  type="button"
+                  class="btn btn-lg mt-2 w-50"
+                  style="background-color: var(--amarelo-primario)"
+                >
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Início -->
+    <footer class="text-white py-3" style="font-size: 12px">
+      <div class="container mt-4">
+        <div class="row">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <a href="#">achados e perdidos</a>
+            <a href="#">nossos motoristas</a>
+            <a href="#">trabalhe conosco</a>
+            <a href="#">sac</a>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"
+          >
+            <p class="m-0">
+              <i class="bi bi-telephone"></i> TELEFONE: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-whatsapp"></i> WHASTAPP: 13 4002-8922
+            </p>
+            <p class="m-0">
+              <i class="bi bi-envelope"></i> EMAIL: fenix@contato.com.br
+            </p>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column text-center mb-5 mb-lg-0"
+          >
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Rua da Caixa de Água, 666,
+              Jardim Legal, Itanhaém - SP CEP 11740-000
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col">
+            <p class="m-0">
+              <span style="color: var(--amarelo-primario)"
+                >EXPRESSO FÊNIX VIAÇÃO LTDA</span
+              >
+              - CNPJ: 05.849.495/0001-41
+            </p>
+            <p>
+              Desenvolvido por:
+              <span style="color: var(--amarelo-primario)">1DSI3 LTDA</span>
+              &copy; Todos os direitos reservados 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Fim -->
+    <!-- Arquivo JS -->
+    <script src="app.js"></script>
+
+    <!-- Acessibilidade -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
+</html>

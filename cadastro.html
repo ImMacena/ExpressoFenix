@@ -22,13 +22,28 @@
     />
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Favicons -->
-    <link rel="shortcut icon" href="favicons/icon_fenix_32.png">
-    <link rel="apple-touch-icon-precomposed" href="favicons/icon_fenix_57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/icon_fenix_72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/icon_fenix_114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/icon_fenix_144.png">
+    <link rel="shortcut icon" href="favicons/icon_fenix_32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="favicons/icon_fenix_57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="favicons/icon_fenix_72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="favicons/icon_fenix_114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="favicons/icon_fenix_144.png"
+    />
 
     <style>
       .imagem {
@@ -90,19 +105,29 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="recarga1.html">Recarregar passe</a>
+                    <a class="dropdown-item" href="recarga1.html"
+                      >Recarregar passe</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="cadastro.html">Fazer um passe</a></li>
+                  <li>
+                    <a class="dropdown-item" href="cadastro.html"
+                      >Fazer um passe</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/">Linhas</a>
+                <a
+                  class="nav-link"
+                  href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/"
+                  >Linhas</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#empresa">Empresa</a>
               </li>
               <li class="nav-item border-end border-white pe-2">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="duvidas.html"
                   >Fale<span style="color: rgba(0, 0, 0, 0)">.</span>Conosco</a
                 >
               </li>
@@ -345,5 +370,17 @@
     <!-- Footer Fim -->
     <!-- Arquivo JS -->
     <script src="app.js"></script>
+
+    <!-- Acessibilidade -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>
