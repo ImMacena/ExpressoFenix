@@ -8,6 +8,16 @@
   --amarelo-primario: #fbc817;
 }
 
+/* Versão Normal */
+/*   --azul-primario: #1c4984;
+  --amarelo-primario: #fbc817; */
+
+/* Versão Clara */
+/*   --azul-primario: #fff;
+  --amarelo-primario: #1c4984; */
+
+/* Alternança de temas em desenvolvimento... */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -329,7 +339,7 @@ nav {
   background-color: #00c908;
   text-align: center;
   padding: 1rem 0;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .pay-btns a:hover {
@@ -366,6 +376,37 @@ nav {
 
 .next-btn:hover {
   color: currentColor;
+}
+
+.pay-item {
+  border-top: 3px dotted #b0b0b0;
+}
+
+.pay-item p {
+  margin-bottom: 0 !important;
+}
+
+.pay-item :nth-last-child() {
+  border-bottom: 3px dotted #b0b0b0;
+}
+
+.pay-item h6 {
+  color: var(--azul-primario);
+}
+
+.pay-resum {
+  background-color: var(--azul-primario);
+  color: var(--amarelo-primario) !important;
+}
+
+.pay-resum-border {
+  border-left: 3px solid gray;
+}
+
+@media (max-width: 768px) {
+  .pay-resum-border {
+    border: none;
+  }
 }
 
 footer {

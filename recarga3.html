@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,18 +23,8 @@
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <style>
-      .imagem {
-        background-image: url("issets/onibus.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
-
-    <title>Fênix | Itanhaém - Cadastro</title>
+    <title>Fênix | Itanhaém</title>
   </head>
-
   <body class="bg-azul">
     <header>
       <!-- Navbar Início -->
@@ -92,7 +82,7 @@
                 <a class="nav-link" href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/">Linhas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#empresa">Empresa</a>
+                <a class="nav-link" href="#empresa">Empresa</a>
               </li>
               <li class="nav-item border-end border-white pe-2">
                 <a class="nav-link" href="#"
@@ -100,7 +90,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cadastrar</a>
+                <a class="nav-link" href="cadastro.html">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
@@ -125,157 +115,69 @@
       </nav>
       <!-- Navbar Fim -->
     </header>
-
-    <main>
-      <div class="hero">
-        <div class="container-fluid">
-          <div class="text-center fs-3 pt-5 text-white">
-            <h1>CADASTRO</h1>
-            <p class="cor-l">
-              Efetue seu cadastro e tenha acesso completo aos nossos serviços!
-            </p>
+    <main class="pb-5" style="background-color: #f0f0f0; min-height: 100vh">
+			<div class="container">
+        <h1 class="text-center py-5 pb-2">RECARREGUE SEU PASSE</h1>
+        <div class="display bg-white shadow px-3 px-lg-4 pb-5 rounded">
+          <a href="recarga2.html"
+            ><i class="bi bi-arrow-left fs-2 text-dark"></i
+          ></a>
+          <div class="row text-center gap-2 px-3 px-lg-5">
+            <div class="col pay-prog border-bl">
+              <p class="m-1">Valor</p>
+            </div>
+            <div class="col pay-prog border-bl">
+              <p class="m-1">Pagamento</p>
+            </div>
+            <div class="col pay-prog border-bl">
+              <p class="m-1">Finalização</p>
+            </div>
           </div>
-
-          <div class="row pb-5">
-            <div class="col-12 col-lg-10 offset-lg-1 bg-white rounded-4">
-              <h3
-                class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
+          <!-- Step3 -->
+          <div class="row px-0 px-sm-3 px-lg-5 mt-5 mx-auto">
+            <p
+              class="fs-5 fw-bold border-bottom border-dark border-2 pb-3 mb-4 mb-lg-5"
+            >
+              Resumo do pedido:
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+								<div class="pay-item my-2 py-2">
+									<h6 class="fw-bold">Método de pagamento</h6>
+									<p><span class="fw-bold">Cartão de crédito</span> (final xxxx)</p>
+								</div>
+								<div class="pay-item my-2 py-2">
+									<h6 class="fw-bold">Método de pagamento</h6>
+									<p><span class="fw-bold">Nome:</span> João Silva Freitas</p>
+									<p><span class="fw-bold">CPF:</span> xxx.xxx.xxx-xx</p>
+									<p><span class="fw-bold">Tipo do passe:</span> Estudante</p>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 pay-resum-border">
+								<div class="pay-item my-2 py-2">
+									<h6 class="fw-bold">Recarga do passe</h6>
+									<p><span class="fw-bold">Valor do item:</span> R$ 50,00</p>
+								</div>
+								<div class="pay-resum px-1 px-lg-5 py-2 mx-0 mx-lg-3 mt-4 mt-lg-5">
+									<h5 class="fw-bold fs-5 mb-0 p-1">Total a pagar: <span class="float-end"><span style="font-size: 13px;">R$</span> 50,00</span></h5>
+								</div>
+							</div>
+            </div>
+						<div class="row mt-4 pt-4 border-top border-gray border-3">
+              <div
+                class="col d-flex justify-content-between align-items-center flex-wrap"
               >
-                Suas informações pessoais
-              </h3>
-
-              <div class="row">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Nome</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite seu Nome Completo"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-5 offset-1">
-                  <label for="exampleFormControlTextarea2" class="form-label"
-                    >RG frente</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="inputGroupFile01"
-                  />
-                </div>
-
-                <div class="col-5">
-                  <label for="exampleFormControlTextarea3" class="form-label"
-                    >RG frente</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="inputGroupFile01"
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="Digite seu Email"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Senha</label
-                  >
-                  <input
-                    class="form-control"
-                    type="password"
-                    placeholder="Digite uma senha"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Confirme Senha</label
-                  >
-                  <input
-                    class="form-control"
-                    type="password"
-                    placeholder="Confirme senha"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <h3
-                  class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
+                <h6 class="col-12 col-lg-6">
+                  Data: 25/11/2022 <br>
+									Expresso Fênix Viação
+                </h6>
+                <div
+                  class="pay-btns col-12 col-lg-6 d-lg-flex justify-content-end mt-4 mt-lg-0"
                 >
-                  Suas informações de endereço
-                </h3>
-
-                <div class="col-10 col-lg-5 offset-1 mb-4">
-                  <label for="exampleFormControlTextarea6" class="form-label"
-                    >Logradouro</label
+                  <a href="#" class="next-btn px-4"
+                    >
+										<i class="bi bi-lock-fill fs-5 pe-2"></i> FINALIZAR</a
                   >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite o nome da rua"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-3 offset-1 mb-lg-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >N°</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Numeração da residencia"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-5 offset-1 my-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >Bairro</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite seu Bairro"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-3 offset-1 my-lg-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >CEP</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="CEP do local"
-                  />
-                </div>
-              </div>
-
-              <div class="row text-center my-5">
-                <div class="col-6 mx-auto">
-                  <button type="button" class="btn btn-success w-100 fs-5">
-                    Cadastrar
-                  </button>
                 </div>
               </div>
             </div>
@@ -283,7 +185,6 @@
         </div>
       </div>
     </main>
-
     <!-- Footer Início -->
     <footer class="text-white py-3" style="font-size: 12px">
       <div class="container mt-4">

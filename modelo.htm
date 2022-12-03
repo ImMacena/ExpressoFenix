@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,18 +23,8 @@
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <style>
-      .imagem {
-        background-image: url("issets/onibus.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
-
-    <title>Fênix | Itanhaém - Cadastro</title>
+    <title>Fênix | Itanhaém</title>
   </head>
-
   <body class="bg-azul">
     <header>
       <!-- Navbar Início -->
@@ -92,7 +82,7 @@
                 <a class="nav-link" href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/">Linhas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#empresa">Empresa</a>
+                <a class="nav-link" href="#empresa">Empresa</a>
               </li>
               <li class="nav-item border-end border-white pe-2">
                 <a class="nav-link" href="#"
@@ -100,7 +90,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cadastrar</a>
+                <a class="nav-link" href="cadastro.html">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
@@ -125,165 +115,9 @@
       </nav>
       <!-- Navbar Fim -->
     </header>
-
-    <main>
-      <div class="hero">
-        <div class="container-fluid">
-          <div class="text-center fs-3 pt-5 text-white">
-            <h1>CADASTRO</h1>
-            <p class="cor-l">
-              Efetue seu cadastro e tenha acesso completo aos nossos serviços!
-            </p>
-          </div>
-
-          <div class="row pb-5">
-            <div class="col-12 col-lg-10 offset-lg-1 bg-white rounded-4">
-              <h3
-                class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
-              >
-                Suas informações pessoais
-              </h3>
-
-              <div class="row">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Nome</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite seu Nome Completo"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-5 offset-1">
-                  <label for="exampleFormControlTextarea2" class="form-label"
-                    >RG frente</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="inputGroupFile01"
-                  />
-                </div>
-
-                <div class="col-5">
-                  <label for="exampleFormControlTextarea3" class="form-label"
-                    >RG frente</label
-                  >
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="inputGroupFile01"
-                  />
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="Digite seu Email"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Senha</label
-                  >
-                  <input
-                    class="form-control"
-                    type="password"
-                    placeholder="Digite uma senha"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <div class="col-10 offset-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Confirme Senha</label
-                  >
-                  <input
-                    class="form-control"
-                    type="password"
-                    placeholder="Confirme senha"
-                  />
-                </div>
-              </div>
-
-              <div class="row my-4">
-                <h3
-                  class="col-10 offset-1 my-5 border-bottom border-dark border-2 pb-3"
-                >
-                  Suas informações de endereço
-                </h3>
-
-                <div class="col-10 col-lg-5 offset-1 mb-4">
-                  <label for="exampleFormControlTextarea6" class="form-label"
-                    >Logradouro</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite o nome da rua"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-3 offset-1 mb-lg-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >N°</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Numeração da residencia"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-5 offset-1 my-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >Bairro</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Digite seu Bairro"
-                  />
-                </div>
-
-                <div class="col-10 col-lg-3 offset-1 my-lg-4">
-                  <label for="exampleFormControlTextarea7" class="form-label"
-                    >CEP</label
-                  >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="CEP do local"
-                  />
-                </div>
-              </div>
-
-              <div class="row text-center my-5">
-                <div class="col-6 mx-auto">
-                  <button type="button" class="btn btn-success w-100 fs-5">
-                    Cadastrar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main class="pb-5" style="background-color: #f0f0f0; min-height: 100vh">
+			<!-- ========== Escreva a partir daqui, entre a tag "main" ========== -->
     </main>
-
     <!-- Footer Início -->
     <footer class="text-white py-3" style="font-size: 12px">
       <div class="container mt-4">
