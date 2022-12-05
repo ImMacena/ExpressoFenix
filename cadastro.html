@@ -135,7 +135,9 @@
                 <a class="nav-link" href="#">Cadastrar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn-bl px-3 rounded" href="#">Login</a>
+                <a class="nav-link btn-bl px-3 rounded" href="login.html"
+                  >Login</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -303,6 +305,18 @@
                 </div>
               </div>
 
+              <div class="mb-3 form-check offset-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck2"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Concordo com os <a href="#">termos de uso</a> e
+                  <a href="#">políticas de privacidade</a>.</label
+                >
+              </div>
+
               <div class="row text-center my-5">
                 <div class="col-6 mx-auto">
                   <button type="button" class="btn btn-success w-100 fs-5">
@@ -310,6 +324,79 @@
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Trabalhe Conosco
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="fw-bold">
+                Possui interesse em ser motorista da
+                <span class="border-bottom border-dark">Expresso Fênix?</span>
+                Preencha o formulário abaixo e envie seu currículo!
+              </p>
+              <div class="form d-flex flex-column gap-5 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Digite seu nome completo"
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Digite seu melhor email"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Digite seu número de telefone"
+                />
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione seu município</option>
+                  <option>Itanhaém</option>
+                  <option>Campinas</option>
+                  <option>Amparo</option>
+                  <option>São Paulo</option>
+                  <option>Serra Negra</option>
+                  <option>Itatiba</option>
+                  <option>Pedreira</option>
+                </select>
+                <div class="border-top border-gray border-3 py-4">
+                  <label for="curriculo" class="mb-3"
+                    >Selecione seu currículo:</label
+                  >
+                  <input type="file" class="form-control" name="curriculo" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn text-white"
+                style="background-color: var(--verde-claro)"
+              >
+                Enviar
+              </button>
             </div>
           </div>
         </div>
@@ -325,8 +412,10 @@
           >
             <a href="#">achados e perdidos</a>
             <a href="#">nossos motoristas</a>
-            <a href="#">trabalhe conosco</a>
-            <a href="#">sac</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >trabalhe conosco</a
+            >
+            <a href="duvidas.html">sac</a>
           </div>
           <div
             class="col-12 col-lg-4 d-flex flex-column gap-2 text-center mb-5 mb-lg-0"

@@ -45,7 +45,7 @@
       href="favicons/icon_fenix_144.png"
     />
 
-    <title>Fênix | Itanhaém</title>
+    <title>Fênix | Itanhaém - Login</title>
   </head>
   <body class="bg-azul">
     <header>
@@ -149,8 +149,70 @@
       </nav>
       <!-- Navbar Fim -->
     </header>
-    <main class="pb-5" style="background-color: #f0f0f0; min-height: 100vh">
-      <!-- ========== Escreva a partir daqui, entre a tag "main" ========== -->
+    <main class="pb-5 textura" style="background-color: var(--azul-primario)">
+      <div class="container mb-5">
+        <h1 class="text-center text-white py-5">LOGIN</h1>
+        <div class="row">
+          <div class="login shadow rounded bg-white p-4 col-12 col-lg-6">
+            <form>
+              <div class="mb-5">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Seu Email ou CPF</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Nós nunca compartilharemos suas informações.
+                </div>
+              </div>
+              <div class="mb-5">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Senha</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-5 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck2"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Mantenha-me conectado.</label
+                >
+              </div>
+              <div class="mt-4 text-center">
+                <button
+                  type="submit"
+                  class="btn w-50"
+                  style="background-color: var(--verde-claro)"
+                >
+                  Logar
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+            <div
+              class="h-100 d-flex flex-column justify-content-center align-items-center text-white"
+            >
+              <h2 class="bg-dark p-3">
+                Efetue login para ter acesso <br />
+                as vantagens e praticidades do<br />
+                <span class="cor-l">Portal Expresso Fênix!</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Modal -->
       <div
         class="modal fade"

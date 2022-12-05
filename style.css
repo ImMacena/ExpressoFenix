@@ -6,6 +6,7 @@
 :root {
   --azul-primario: #1c4984;
   --amarelo-primario: #fbc817;
+  --verde-claro: #00c908;
 }
 
 /* Versão Normal */
@@ -134,7 +135,7 @@ nav {
   width: fit-content;
 }
 
-.recarga {
+.textura {
   border-bottom: 3px solid var(--amarelo-primario);
   background: linear-gradient(rgba(28, 73, 132, 0.88), rgba(28, 73, 132, 0.88)),
     url(issets/textura.png);
@@ -340,7 +341,13 @@ nav {
 .form-control {
   border: none !important;
   border-radius: 0 !important;
-  border-bottom: 1px solid var(--amarelo-primario) !important;
+  border-bottom: 2px solid var(--amarelo-primario) !important;
+}
+
+.form-select {
+  border: none !important;
+  border-radius: 0 !important;
+  border: 2px solid var(--amarelo-primario) !important;
 }
 
 .form-control:focus {
@@ -441,6 +448,10 @@ nav {
   background-size: cover;
   background-position: right;
   min-height: 100vh;
+}
+
+.modal {
+  z-index: 99999 !important;
 }
 
 footer {
