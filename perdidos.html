@@ -45,7 +45,7 @@
       href="favicons/icon_fenix_144.png"
     />
 
-    <title>Fênix | Itanhaém</title>
+    <title>Fênix | Itanhaém - Achados e Perdidos</title>
   </head>
   <body class="bg-azul">
     <header>
@@ -114,7 +114,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#empresa">Empresa</a>
+                <a class="nav-link" href="index.html#empresa">Empresa</a>
               </li>
               <li class="nav-item border-end border-white pe-2">
                 <a class="nav-link" href="duvidas.html"
@@ -149,223 +149,95 @@
       </nav>
       <!-- Navbar Fim -->
     </header>
-    <main>
-      <section class="hero">
+    <main class="pb-5 empresa">
+      <div class="perdidos">
         <div class="container">
-          <div class="row">
-            <div class="col col-sm-5 col-lg-4 title-hero">
-              <h1 class="title-l">Expresso</h1>
-              <h1 class="title-l">Fênix</h1>
-              <h1 class="title-b">ITANHAÉM</h1>
-              <p class="text-white mt-5 fs-6 bg-dark p-2">
-                Com a
-                <span style="color: var(--amarelo-primario)"
-                  >Expresso Fênix</span
-                >
-                você tem acesso aos nossos serviços no conforto de sua casa!
-              </p>
-            </div>
+          <div class="text-center fs-3 pt-5 text-white">
+            <h1>ACHADOS E PERDIDOS</h1>
+            <h5 class="cor-l">Preencha o formulário abaixo</h5>
           </div>
-        </div>
-        <img
-          src="issets/triangle.png"
-          alt="Seta indicando para baixo"
-          class="triangle"
-        />
-      </section>
-      <section class="textura d-flex align-items-center">
-        <div class="container py-2 py-lg-5">
           <div class="row">
-            <div
-              class="col-12 col-lg-6 text-white text-center d-flex flex-column justify-content-center pe-lg-5"
-            >
-              <p class="btn-novidade mx-auto mb-5 fs-5 mt-4 mt-lg-0">
-                NOVIDADE!
-              </p>
-              <p class="m-0 fs-5">Agora você pode fazer a</p>
-              <h1 class="recarga-title my-3">RECARGA DO<br />SEU PASSE</h1>
-              <p class="m-0 fs-5">
-                <span style="color: #00c908">100% online</span>, a qualquer
-                hora.
-              </p>
-              <div class="row">
-                <div class="col d-flex justify-content-evenly p-5 pb-0 fs-5">
-                  <p><i class="bi bi-shield"></i> Seguro</p>
-                  <p><i class="bi bi-lightning-charge"></i> Rápido</p>
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2 pt-1 text-white">
+              <div class="mb-3">
+                <div class="mb-3 mt-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Nome completo</label
+                  >
+                  <input
+                    type="nome"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 py-4 py-lg-0">
-              <img
-                src="issets/passe.jpg"
-                alt="Estudante sentada no ônibus"
-                style="width: 100%; opacity: 0.8"
-                class="rounded mx-auto"
-              />
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div
-              class="col-12 text-center mt-5 d-flex flex-column gap-3 align-items-center"
-            >
-              <a href="recarga1.html" class="btn-recarga fs-3"
-                >RECARREGAR PASSE <i class="bi bi-arrow-repeat"></i
-              ></a>
-              <a href="cadastro.html" class="btn-recarga"
-                >Ainda não possui um passe?</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="horario">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-end">
-              <div class="text-center">
-                <p class="bg-dark text-white px-5 fs-4 mb-0">
-                  Horario de funcionamento
-                </p>
-                <p class="presencial mx-auto px-5 fs-5">PRESENCIAL</p>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="d-flex">
-                <div class="p-3">
-                  <i class="bi bi-clock relogio"></i>
+                <div class="mb-3">
+                  <div class="mb-3 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Sua data de nascimento</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                    />
+                  </div>
+                <div class="mb-3 mt-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Número de telefone</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
-                <div class="d-flex flex-column justify-content-center fs-5">
-                  <p class="text-white">De segunda à sexta-feira</p>
-                  <p class="mb-0" style="color: var(--amarelo-primario)">
-                    Das 08:00 às 12:00, 13:00 às 17:00
-                  </p>
+                <div class="mb-3 mt-3">
+                  <label for="select" class="form-label"
+                    >Selecione o município onde foi perdido</label
+                  >
+                  <select
+                    id="select"
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecione uma opção</option>
+                    <option>Itanhaém</option>
+                    <option>Campinas</option>
+                    <option>Amparo</option>
+                    <option>São Paulo</option>
+                    <option>Serra Negra</option>
+                    <option>Itatiba</option>
+                    <option>Pedreira</option>
+                  </select>
+                </div>
+                <div class="mb-3 text-white">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Dê detalhes sobre o que foi perdido</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="mb-3 cor-l">
+                  <h6>
+                    Avaliaremos sua solicitação e responderemos assim que puder!
+                  </h6>
+                </div>
+                <div class="mb-5 text-center">
+                  <button
+                    type="button"
+                    class="btn btn-lg mt-2 w-50"
+                    style="background-color: var(--amarelo-primario)"
+                  >
+                    Enviar
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-5 pt-5 pb-3">
-            <div class="col text-white mb-5 text-center text-lg-start">
-              <h2>
-                Pelo portal <span class="cor-l">Expresso Fênix</span> você
-                possui mais <span class="cor-l">facilidade de acesso!</span>
-              </h2>
-            </div>
-            <div class="col d-flex align-items-center flex-column gap-3">
-              <a
-                href="https://www2.itanhaem.sp.gov.br/horario-do-onibus/"
-                style="text-decoration: none"
-              >
-                <div
-                  class="miniBanner d-flex justify-content-between px-3 align-items-center"
-                >
-                  <i class="bi bi-bezier2"></i>
-                  <p class="mb-0 fs-5">Linhas e Itinerário</p>
-                </div>
-              </a>
-              <a href="duvidas.html" style="text-decoration: none">
-                <div
-                  class="miniBanner d-flex justify-content-between px-3 align-items-center"
-                >
-                  <i class="bi bi-chat-dots"></i>
-                  <p class="mb-0 fs-5">Atendimento Online</p>
-                </div>
-              </a>
-              <a href="recarga1.html" style="text-decoration: none">
-                <div
-                  class="miniBanner d-flex justify-content-between px-3 align-items-center"
-                >
-                  <i class="bi bi-credit-card-2-back"></i>
-                  <p class="mb-0 fs-5">Recargas de Passe</p>
-                </div>
-              </a>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="cidades">
-        <div class="container py-5 text-center">
-          <h1 class="text-white p-2 bg-dark">
-            OUTRAS <span class="fw-bold cor-l">PRINCIPAIS CIDADES</span> ONDE
-            ATUAMOS
-          </h1>
-          <div
-            class="cards d-flex flex-wrap justify-content-center gap-4 py-5 text-white"
-          >
-            <div
-              class="card-cidade d-flex flex-column align-items-center campinas"
-            >
-              <h4>Campinas - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-            <div
-              class="card-cidade d-flex flex-column align-items-center amparo"
-            >
-              <h4>Amparo - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-            <div
-              class="card-cidade d-flex flex-column align-items-center sao-paulo"
-            >
-              <h4>São Paulo - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-            <div
-              class="card-cidade d-flex flex-column align-items-center serra-negra"
-            >
-              <h4>Serra Negra - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-            <div
-              class="card-cidade d-flex flex-column align-items-center itatiba"
-            >
-              <h4>Itatiba - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-            <div
-              class="card-cidade d-flex flex-column align-items-center pedreira"
-            >
-              <h4>Pedreira - SP</h4>
-              <a href="#">Veja mais <i class="bi bi-caret-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="empresa" id="empresa">
-        <div class="container py-5">
-          <div class="row">
-            <div
-              class="col col-lg-6 sobre py-4 text-center mx-2 mx-lg-0 rounded"
-            >
-              <h1 class="fw-bold">
-                SOBRE O GRUPO
-                <span class="border-bottom border-dark border-5">FÊNIX</span>
-              </h1>
-              <p class="p-4 p-lg-5 mx-lg-3" style="text-align: justify">
-                Referência de gestão no transporte de passageiros, o Grupo Fênix
-                atua no segmento há 67 anos. Transportando mais de 15.000.000 de
-                passageiros por ano, a empresa está presente em pelo menos 46
-                municípios do estado de São Paulo, atendendo a Região
-                Metropolitana de Campinas, Região Bragantina, Circuito das
-                Águas, Circuito das Frutas, Região de Botucatu, Baixa Mogiana,
-                Litorais Sul e Norte, e também o sul de Minas Gerais.<br /><br />Fundado
-                pela família Chedid, que chegou ao Brasil em 1938, o ramo de
-                transportes começou como uma atividade ligada à criação de um
-                pequeno hotel em Itatiba, no interior de São Paulo, nos anos
-                1950. Em 1952, veio o primeiro ônibus para ligação entre Itatiba
-                e São Paulo que já era feita pela família com uma pequena perua
-                de nove lugares. O modelo do ônibus era um Ford, a diesel, motor
-                Hercules.
-              </p>
-              <div class="btn-sobre mx-auto">
-                <a
-                  href="https://diariodotransporte.com.br/2022/02/20/historia-fundado-por-libaneses-grupo-fenix-completa-70-anos-nos-transportes/#:~:text=Fevereiro%20de%201952.-,Em%201%C2%BA%20de%20janeiro%20de%201955%20a%20fam%C3%ADlia%20iniciou%20o,at%C3%A9%20S%C3%A3o%20Paulo%20e%20Campinas."
-                  >SAIBA MAIS</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <!-- Modal -->
       <div
         class="modal fade"
@@ -410,7 +282,7 @@
                   placeholder="Digite seu número de telefone"
                 />
                 <select class="form-select" aria-label="Default select example">
-                  <option selected disabled>Selecione seu município</option>
+                  <option selected>Selecione seu município</option>
                   <option>Itanhaém</option>
                   <option>Campinas</option>
                   <option>Amparo</option>
