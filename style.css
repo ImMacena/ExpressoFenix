@@ -475,3 +475,14 @@ footer i {
   padding: 4px;
   margin-right: 5px;
 }
+
+/* Scroll Reveal */
+.title-l,
+.btn-novidade,
+.recarga-title,
+.btn-recarga,
+.miniBanner,
+.card-cidade,
+.sobre {
+  visibility: hidden;
+}
